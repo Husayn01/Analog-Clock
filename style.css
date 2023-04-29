@@ -1,0 +1,119 @@
+html, body{
+    background-color: rgb(40, 38, 38);
+}
+.main{
+    display: flex;
+    justify-content: center;
+}
+.clock-face{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin-top: 5rem;
+    border-radius: 50%;
+    background-color: rgb(61, 53, 53);
+    border: 8px solid rgb(34, 32, 32);
+    box-shadow:  -4px -4px 10px rgb(61, 53, 53, 0.5), 
+    inset -4px -4px 10px rgb(61, 53, 53, 0.5),
+    inset 4px 4px 10px rgb(61, 53, 53, 0.5),
+    4px 4px 10px rgb(61, 53, 53, 0.5);
+}
+.hour-hand{
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    width: 30%;
+    height: 6px;
+    background-color: black;
+    border-radius: 6px;
+    z-index: 1;
+}
+.minute-hand{
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    width: 40%;
+    height: 4px;
+    background-color: rgb(17, 16, 16);
+    border-radius: 4px;
+    z-index: 2;
+}
+.second-hand{
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    width: 45%;
+    height: 2px;
+    background-color: red;
+    border-radius: 2px;
+    z-index: 3;
+    transform-origin: 100%;
+}
+.dot{
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius: 50%;
+    z-index: 4;
+}
+span{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    transform-origin: center center;
+}
+span.twelve{
+   transform: translate(-50%, -50%) translateY(-90px);
+}
+span.one{
+    transform: translate(-50%, -50%) translateY(-80px) translateX(45px);
+}
+span.two{
+    transform: translate(-50%, -50%) translateY(-45px) translateX(80px);
+}
+span.three{
+    transform: translate(-50%, -50%) translateY(0px) translateX(90px);
+}
+span.four{
+    transform: translate(-50%, -50%) translateY(45px) translateX(80px);
+}
+span.five{
+    transform: translate(-50%, -50%) translateY(80px) translateX(45px);
+}
+span.six{
+    transform: translate(-50%, -50%) translateY(90px);
+}
+ span.seven{
+    transform: translate(-50%, -50%) translateY(80px) translateX(-45px);
+}
+ span.eight{
+    transform: translate(-50%, -50%) translateY(45px) translateX(-80px);
+}
+ span.nine{
+    transform: translate(-50%, -50%) translateY(0px) translateX(-90px);
+}
+span.ten{
+    transform: translate(-50%, -50%) translateY(-45px) translateX(-80px); 
+}
+span.eleven{
+    transform: translate(-50%, -50%) translateY(-80px) translateX(-45px);
+} 
+
