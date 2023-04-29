@@ -1,5 +1,6 @@
 html, body{
     background-color: rgb(40, 38, 38);
+    font-family:'poppins';
 }
 .main{
     display: flex;
@@ -119,6 +120,7 @@ span.eleven{
 .footer{
     text-align: center;
     margin-top: 3rem;
+    color: #fff;
 }
 .footer i{
     margin: 0.5rem;
